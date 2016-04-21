@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Factorial</title>
+        <style>
+            .section {
+                display:inline-block;
+                margin-left: 20px;
+            }
+            .form {
+                position: absolute;
+                top: 0;
+            }
+            .inputsection {
+                margin-top: 20px;
+                position: relative;
+                width: 250px;
+            }
+            input {
+                position: absolute;
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='section results'>
+            <h3>Factors:</h3>
+            <p class='factors1'></p>
+            <p class='factors2'></p>
+
+            <h3>Common Factors</h3>
+            <p class='commonfactors'></p>
+            <h3>Least Common Multiple</h3>
+            <p class='leastcommonmultiple'></p>
+        </div>
+        <div class='section form'>
+            <div class='inputsection'>
+                <label for='firstnumber'>First Number</label>
+                <input type='text' id='firstnumber' maxlength='5'>
+            </div>
+            <div class='inputsection'>
+                <label for='secondnumber'>Second Number</label>
+                <input type='text' id='secondnumber' maxlength='5'>
+            </div>
+            <div class='inputsection'>
+                <input type='button' id='submitbutton' value='Get Factors'>
+            </div>
+        </div>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script src='scripts/factorial.js'></script>
+    </body>
+</html>
